@@ -39,7 +39,20 @@ while True:
         #llama a la instacia
         print(f"El area de ",objeto.nombre," es de ",objeto.area())
         menu=input()
- 
+    elif opcion=="3":
+        print("Triangulo")
+        #se piden las caracteristicas
+        base=float(input())
+        altura=float(input())
+        #se crea el objeto
+        objeto=Triangulo(base,altura)
+        objeto.nombre="Triangulo"
+        #llama a la instacia
+        print(f"El area de ",objeto.nombre," es de ",objeto.area())
+        menu=input()
+
+        print(f"El area de ",objeto.nombre," es de ",objeto.area())
+        menu=input()
     elif opcion=="0":
         print("Adios")
         #cierra el bucle y se sale del menu
