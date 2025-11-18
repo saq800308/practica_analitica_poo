@@ -60,7 +60,16 @@ while True:
          #llama a la instacia
         print(f"El area de ",objeto.nombre," es de ",objeto.area())
         menu=input()
-   
+    elif opcion=="5":
+        print("Cubo perfecto")
+        #se piden las caracteristicas
+        lado=float(input())
+        #se crea el objeto
+        objeto=Cubo_perfecto(lado)
+        objeto.nombre="Cubo prefecto"
+         #llama a la instacia
+        print(f"El area de ",objeto.nombre," es de ",objeto.area())
+        menu=input()
     elif opcion=="0":
         print("Adios")
         #cierra el bucle y se sale del menu
