@@ -29,7 +29,17 @@ while True:
         print(f"El area de ",objeto.nombre," es de ",objeto.area())
         #escribe cual quier tecla para seguir 
         menu=input()
-   
+    elif opcion=="2":
+        print("Cuadrado")
+        #se piden las caracteristicas
+        lado=float(input())
+        #se crea el objeto
+        objeto=cuadrado(lado)
+        objeto.nombre="Cuadrado"
+        #llama a la instacia
+        print(f"El area de ",objeto.nombre," es de ",objeto.area())
+        menu=input()
+ 
     elif opcion=="0":
         print("Adios")
         #cierra el bucle y se sale del menu
