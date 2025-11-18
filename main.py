@@ -50,9 +50,17 @@ while True:
         #llama a la instacia
         print(f"El area de ",objeto.nombre," es de ",objeto.area())
         menu=input()
-
+    elif opcion=="4":
+        print("Circulo")
+        #se piden las caracteristicas
+        radio=float(input())
+        #se crea el objeto
+        objeto=Circulo(radio)
+        objeto.nombre="Circulo"
+         #llama a la instacia
         print(f"El area de ",objeto.nombre," es de ",objeto.area())
         menu=input()
+   
     elif opcion=="0":
         print("Adios")
         #cierra el bucle y se sale del menu
