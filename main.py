@@ -5,6 +5,8 @@ from Cuadrado import cuadrado
 from Triangulo import Triangulo
 from Rectangulo import Rectangulo
 from Cubo_perfecto import Cubo_perfecto
+from Cilindro import Cilindro
+from paralelograma import paralelograma
 # se crea un bucle con el menu y las opciones 
 while True:
     print("menu")
@@ -13,6 +15,8 @@ while True:
     print("3. Area Triangulo")
     print("4. Area Circulo")
     print("5. Area Cubo")
+    print("6. Area Cilindro")
+    print("7. Area Paralelograma")
     print("0. salir")
     #se selecciona la opcion requerrida
     opcion=input("Que opcion deseas:")
@@ -69,6 +73,24 @@ while True:
         objeto.nombre="Cubo prefecto"
          #llama a la instacia
         print(f"El area de ",objeto.nombre," es de ",objeto.area())
+        menu=input()
+    elif opcion=="6":
+        print("Cilindro")
+        radio=float(input("ingrese el radio: "))
+        altura=float(input("ingrse la altura: "))
+        objeto=Cilindro("Cilindro")
+        objeto.altura=altura
+        objeto.radio=radio
+        print(f"El area de ",objeto.nombre, " es de: ",objeto.area())
+        menu=input()
+    elif opcion=="7":
+        print("Paralelograma")
+        altura=float(input("ingrese la altura: "))
+        base=float(input("ingrese la altura: "))
+        objecto=paralelograma("Paralelograma")
+        objeto.altura=altura
+        objeto.base=base
+        print(f"el area de ",objeto.nombre," es de: ",objeto.area())
         menu=input()
     elif opcion=="0":
         print("Adios")
