@@ -7,6 +7,7 @@ from Rectangulo import Rectangulo
 from Cubo_perfecto import Cubo_perfecto
 from Cilindro import Cilindro
 from paralelograma import paralelograma
+from Esfera import Esfera
 # se crea un bucle con el menu y las opciones 
 while True:
     print("menu")
@@ -69,8 +70,8 @@ while True:
         #se piden las caracteristicas
         lado=float(input())
         #se crea el objeto
-        objeto=Cubo_perfecto(lado)
-        objeto.nombre="Cubo prefecto"
+        objeto=Cubo_perfecto("cubo perfecto")
+        objeto.lado=lado
          #llama a la instacia
         print(f"El area de ",objeto.nombre," es de ",objeto.area())
         menu=input()
@@ -90,6 +91,13 @@ while True:
         objecto=paralelograma("Paralelograma")
         objeto.altura=altura
         objeto.base=base
+        print(f"el area de ",objeto.nombre," es de: ",objeto.area())
+        menu=input()
+    elif opcion=="8":
+        print("Esfera")
+        radio=float(input("Ingresa el radio"))
+        objeto=Esfera("Esfera")
+        objeto.radio=radio
         print(f"el area de ",objeto.nombre," es de: ",objeto.area())
         menu=input()
     elif opcion=="0":
